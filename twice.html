@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:#000000"
+<title>TWICE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="homestyle.css">
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
+<head>
+<body>
+<ul>
+  <li><img src="jyp.jpg" style="width:140px;height:60px;">
+  <li><a href="index.html">HOME</a></li>
+  <li><a href="about.html">ABOUT</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">PROFILES</a>
+    <div class="dropdown-content">
+	  <a href="2pm.html">2PM</a>
+	  <a href="bah.html">BAEK AH YEON</a>
+	  <a href="bp.html">BERNARD PARK</a>
+	  <a href="day6.html">DAY6</a>
+      <a href="got7.html">GOT7</a>
+	  <a href="gs.html">G. SOUL</a>
+	  <a href="missa.html">MISS A</a>
+      <a href="twice.html">TWICE</a>
+      <a href="wg.html">WONDER GIRLS</a>
+  <li><a href="news.html">NEWS</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">OTHERS</a>
+    <div class="dropdown-content">
+	  <a href="faqs.html">FAQs</a>
+	  <a href="trivias.html">TRIVIAS</a>
+    </div>
+  </li>
+</ul>
+</head>
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="twice.jpg" style="width:100%">
+  <img class="mySlides" src="nayeon.jpg" style="width:100%">
+  <img class="mySlides" src="jeongyeon.jpg" style="width:100%">
+  <img class="mySlides" src="momo.jpg" style="width:100%">
+  <img class="mySlides" src="sana.jpg" style="width:100%">
+  <img class="mySlides" src="jihyo.jpg" style="width:100%">
+  <img class="mySlides" src="mina.jpg" style="width:100%">
+  <img class="mySlides" src="dahyun.jpg" style="width:100%">
+  <img class="mySlides" src="chaeyoung.jpg" style="width:100%">
+  <img class="mySlides" src="tzuyu.jpg" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+	<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+	<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+	<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
+	<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(7)"></span>
+	<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(8)"></span>
+	<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(9)"></span>
+	<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(10)"></span>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html> 
