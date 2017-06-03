@@ -38,10 +38,15 @@
   </li>
 </ul>
 </head>
+<script>
+var elem = document.getElementById("myvideo");
+if (elem.requestFullscreen) {
+  elem.requestFullscreen();
+}
+</script> 
 <video controls autoplay>
-<center>
-  <source src="jypnation.mp4" type="video/mp4">
-</center>
+  <source src="jypnation.mp4"> </source>
 </video>
+
 </body>
 </html>
